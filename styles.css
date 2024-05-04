@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(to right, #eef, #f9f9f9);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align children horazontally*/
+  min-height: 100vh; /* Minimum height to view the viewport */
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #dde;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 26px; /* Slightly larger */
+  font-weight: bold;
+  margin-bottom: 20px; /* Adds space below the heading */
+}
+label {
+  display: block;  /* Makes the label take the full width and forces the input to a new line */
+  margin-top: 5px;
+  margin-bottom: 0px;  /* Adjust space between the label and the input field */
+  color: #555;  /* Optional: Changes the text color for better readability */
+  font-size: 14px;  /* Optional: Adjust the font size as needed */
+}
+
+.form-container {
+  max-width: 360px;
+  width: 100%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 600px) {
+  .form-container {
+      padding: 10px;
+  }
+}
+
+form {
+  margin-top: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background-color: #5c67f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5058e2;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+.success-message {
+  color: #00ff00;
+  font-size: 12px;
+}
